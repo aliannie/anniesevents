@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Annie's Events</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1em 0;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            position: relative;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            padding: 1em;
+            display: block;
+        }
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li:hover ul {
+            display: block;
+        }
+        nav ul li ul li a {
+            padding: 0.5em;
+            color: white;
+        }
+        .banner {
+            background-image: url('https://via.placeholder.com/1500x500');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .banner h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .container {
+            padding: 2em;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 2em;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 1em;
+            margin: 0.5em 0;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            background-color: #333;
+            color: white;
+            padding: 1em 2em;
+            border: none;
+            cursor: pointer;
+        }
+        .social-media {
+            text-align: center;
+            padding: 2em 0;
+        }
+        .social-media a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Annie's Events</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a>
+                <ul>
+                    <li><a href="#">Weddings</a></li>
+                    <li><a href="#">Corporate Events</a></li>
+                    <li><a href="#">Private Parties</a></li>
+                    <li><a href="#">Consultations</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Portfolio</a>
+                <ul>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Videos</a></li>
+                </ul>
+            </li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="banner">
+        <h1>Welcome to Annie's Events</h1>
+    </div>
+    <div class="container">
+        <section class="contact-form">
+            <h2>Contact Me</h2>
+            <form action="#" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </div>
+    <footer>
+        <div class="social-media">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
